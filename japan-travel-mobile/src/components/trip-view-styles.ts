@@ -1,0 +1,25 @@
+import { StyleSheet } from 'react-native';
+import { colors, layout } from '@/lib/theme';
+export const tripViewStyles = StyleSheet.create({
+  screen: { flex: 1, backgroundColor: colors.background },
+  header: { paddingHorizontal: 12, paddingBottom: 8, flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: colors.background },
+  headerSide: { width: 48, minHeight: 48, alignItems: 'center', justifyContent: 'center' }, headerTitle: { flex: 1, color: colors.text, fontSize: 19, lineHeight: 28, fontWeight: '600', textAlign: 'center' },
+  content: { paddingHorizontal: 20, paddingTop: 12, paddingBottom: 32, gap: 14, maxWidth: 660, width: '100%', alignSelf: 'center' },
+  title: { color: colors.text, fontSize: 26, lineHeight: 36, fontWeight: '600' }, section: { color: colors.text, fontSize: 20, lineHeight: 30, fontWeight: '600' },
+  body: { color: colors.text, fontSize: 15, lineHeight: 25 }, note: { color: colors.secondary, fontSize: 12, lineHeight: 20 }, subtitle: { color: colors.secondary, fontSize: 14, lineHeight: 23 },
+  row: { flexDirection: 'row', alignItems: 'center', gap: 12 }, wrap: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 10 }, grow: { flex: 1, minWidth: 0 },
+  card: { padding: 16, backgroundColor: colors.card, borderRadius: layout.cardRadius, borderWidth: 1, borderColor: colors.border, gap: 12 }, label: { color: colors.text, fontSize: 15, lineHeight: 24, fontWeight: '500' },
+  link: { minHeight: 44, justifyContent: 'center', paddingVertical: 8 }, linkText: { fontSize: 13, lineHeight: 21, color: colors.action },
+  amount: { color: colors.text, fontSize: 24, lineHeight: 34, fontWeight: '600' }, divider: { height: 1, backgroundColor: colors.border },
+  shortcut: { backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border, borderRadius: 12, paddingHorizontal: 14, paddingVertical: 12, minHeight: 52, flexDirection: 'row', flexWrap: 'wrap', gap: 10, alignItems: 'center' },
+  tabs: { backgroundColor: colors.background, paddingVertical: 10 }, dayTab: { minHeight: 44, minWidth: 62, paddingHorizontal: 13, paddingVertical: 10, borderRadius: 11, backgroundColor: colors.card, alignItems: 'center', justifyContent: 'center' },
+  activeTab: { backgroundColor: colors.selected }, tabText: { color: colors.text, fontSize: 14, lineHeight: 22, fontWeight: '500' }, activeTabText: { color: colors.selectedText },
+  number: { width: 30, minHeight: 30, borderRadius: 15, backgroundColor: colors.selected, color: colors.selectedText, fontSize: 12, lineHeight: 30, textAlign: 'center', overflow: 'hidden' },
+  activity: { gap: 12, paddingBottom: 22, borderBottomWidth: 1, borderBottomColor: colors.border },
+  empty: { flex: 1, paddingVertical: 40, alignItems: 'center', justifyContent: 'center', gap: 16 },
+  count: { flex: 1, color: colors.text, textAlign: 'center', fontSize: 17, lineHeight: 27, fontWeight: '500' },
+  checkbox: { width: 22, height: 22, borderWidth: 1, borderColor: colors.secondary, borderRadius: 5, alignItems: 'center', justifyContent: 'center' }, checked: { backgroundColor: colors.text, borderColor: colors.text },
+  smallButton: { minHeight: 44, paddingHorizontal: 12, paddingVertical: 10, borderRadius: 10, backgroundColor: colors.action, alignItems: 'center', justifyContent: 'center' }, smallButtonText: { color: colors.onAction, fontSize: 12, lineHeight: 20, textAlign: 'center', fontWeight: '500' },
+  secondaryButton: { backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }, secondaryButtonText: { color: colors.text },
+  pressed: { opacity: 0.6 }, disabled: { backgroundColor: colors.disabled, opacity: 0.65 },
+});

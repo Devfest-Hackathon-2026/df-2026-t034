@@ -1,0 +1,12 @@
+# Supply _IMAGE with a fully qualified Artifact Registry image tag.
+# Invoke with a dedicated build service account. This build never receives
+# the runtime Gemini secret or personal Google credentials.
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['build', '--tag', '${_IMAGE}', '.']
+images:
+  - '${_IMAGE}'
+options:
+  logging: CLOUD_LOGGING_ONLY
+  machineType: E2_MEDIUM
+timeout: 900s
